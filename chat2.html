@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema ESF</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#dcdcdc;
+}
+
+/* Estrutura principal */
+.container{
+    display:flex;
+    height:100vh;
+}
+
+/* Barra lateral */
+.sidebar{
+    width:160px;
+    background:linear-gradient(to bottom, #1d244f, #4a90e2);
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:20px;
+}
+
+/* Logo lateral */
+.sidebar img{
+    width:90px;
+}
+
+/* Conteúdo */
+.content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Topo */
+.header{
+    height:110px;
+    background:linear-gradient(to right, #1d244f, #4a90e2);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 40px;
+    color:white;
+}
+
+/* Título */
+.header h1{
+    font-size:70px;
+    font-family: Georgia, serif;
+    font-weight:normal;
+}
+
+/* SUS */
+.sus{
+    font-size:40px;
+    font-weight:bold;
+    color:black;
+}
+
+/* Área central */
+.main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:60px;
+}
+
+/* Caixa login */
+.login-box{
+    width:360px;
+    background:#efefef;
+    border-radius:10px;
+    padding:40px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Título login */
+.login-title{
+    border:1px solid black;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    font-style:italic;
+    margin-bottom:40px;
+}
+
+/* Formulário */
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"]{
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid black;
+    border-radius:8px;
+}
+
+/* Checkbox */
+.remember{
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+/* Botão */
+button{
+    background:#4a90e2;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    font-size:30px;
+    cursor:pointer;
+    color:black;
+}
+
+button:hover{
+    background:#3578c9;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <!-- Troque pela sua imagem -->
+        <img src="logo.png" alt="Logo">
+    </div>
+
+    <!-- Conteúdo -->
+    <div class="content">
+
+        <!-- Topo -->
+        <div class="header">
+
+            <h1>Sistema ESF</h1>
+
+            <div class="sus">
+                SUS
+            </div>
+
+        </div>
+
+        <!-- Área principal -->
+        <div class="main">
+
+            <div class="login-box">
+
+                <div class="login-title">
+                    Login
+                </div>
+
+                <form>
+
+                    <input 
+                        type="email" 
+                        placeholder="E-mail"
+                    >
+
+                    <input 
+                        type="password" 
+                        placeholder="Senha"
+                    >
+
+                    <label class="remember">
+                        <input type="checkbox">
+                        Lembrar de mim
+                    </label>
+<a href="chat3.html" class="btn-entrar">Entrar</a>
+                  
+                 
+                    
+                    
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+

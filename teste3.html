@@ -16,19 +16,18 @@
             height:100vh;
         }
 
-        /* Barra lateral */
+       
         .sidebar{
             width:120px;
             background: linear-gradient(to bottom, #1f2a5a, #3b82f6);
         }
 
-        /* Área principal */
+       
         .conteudo{
             flex:1;
             background:#f2f2f2;
         }
 
-        /* Cabeçalho */
         .topo{
             height:100px;
             background: linear-gradient(to right, #1f2a5a, #3b82f6);
@@ -46,22 +45,7 @@
 </head>
 <body>
  <div>
-    <div
-    style="
-         width: 100%;
-         height: 100%;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         ">
-         
-     
-     <label>Email:</label> 
-            <input type="text" name="Email" id="Email"><br><br>
-
-            </div>
-         </div>
-
+       
     <div class="container">
 
         <!-- Barra lateral -->
@@ -74,9 +58,24 @@
                 Sistema ESF
             </div>
 
+            <form id="formulario" method="POST" style="display: flex; align-items: center; justify-content: center; flex-direction:column;">
+
+                <label>Email:</label>
+                <input type="text" name="email" id="email"><br><br>
+
+                <label >Senha:</label>
+                <input type="password" name="semha" id="senha"><br><br>
+
+                <button type="submit" id="logar">Enviar</button>
+
+                
+
+            </form>
         </div>
 
     </div>
 
 </body>
 </html>
+
+
