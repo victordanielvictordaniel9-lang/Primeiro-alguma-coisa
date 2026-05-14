@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Moderno</title>
+    <link rel="stylesheet" href="login_chat.css">
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" id="formulario">
+            <h2>Bem-vindo</h2>
+            <p>Faça login para continuar</p>
+            
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="login-button">Entrar</button>
+            
+            <div class="footer-links">
+                <a href="#">Esqueceu a senha?</a>
+                <span>Não tem conta? <a href="chat3.html">Cadastre-se</a></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<script>
+    document.getElementById('formulario').addEventListener('submit', function(event) {
+
+         event.preventDefault();
+
+        let senha_definida = 123456;
+        let email_definido = 'teste@hotmail.com';
+
+        let senha_inserida = document.getElementById('password').value;
+        let email_inserido = document.getElementById('email').value;
+
+        if(senha_definida == senha_inserida && email_definido == email_inserido) {
+            alert('suces');
+        } else {
+            alert('errou')
+        }
+
+    });
+
+</script>
